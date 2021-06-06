@@ -20,22 +20,6 @@ This repository constitutes an Inventor "project". You should use this repositor
 * install and update using the Autodesk Desktop App
 * install the latest version of Inventor Professional, keep it updated
 
-### Configure inventor defaults
-
-Please configure your inventor to use metric (mm) by default. You might be creating tubing and other sketch-based parts, which may get generated in imperial, which is not what we want.
-
-For how to configure the default template to use mm, read [this article](https://knowledge.autodesk.com/support/inventor/learn-explore/caas/sfdcarticles/sfdcarticles/How-to-switch-the-default-units-from-imperial-to-metric-in-Inventor.html).
-
-### Enable Content Center
-
-Some hardware in our models comes from the Inventor Content Center.
-
-If you are not finding the parts in the Content Center, it maybe that your Inventor is out of date. Also, there is an [article](https://knowledge.autodesk.com/support/inventor/troubleshooting/caas/sfdcarticles/sfdcarticles/Inventor-Content-Center-libraries-are-empty.html) explaining some possible solutions.
-
-### Install threadModeler
-
-You may have to create in-model threads for interfacing custom 3d printed parts with hardware, pneumatic components or sensors. In this case, you may find it useful to install the threadModeler plugin. Read more about this (optional) step in [this guide](thread_modeler.md). 
-
 ## Install and configure git
 
 Before we proceed, we assume that you have installed, configured and at least minimally learned how to use git and git bash. If not, please read the [git setup](https://github.com/RespiraWorks/Ventilator/wiki/git-setup) wiki article.
@@ -87,5 +71,8 @@ the repos on whom the files belong to.
 
 Things should now be wonderful, and you should be seeing rainbows 'n stuff.
 
-You can now go back to the main [wiki](https://github.com/RespiraWorks/Ventilator/wiki) and read the rest of whatever
-is pertinent to your specific work.
+## What's next?
+
+You have most things configured, but you may want to also read our ["Inventor how-to" wiki](https://github.com/RespiraWorks/inventor-config/wiki). There are a few more potential configuration steps depending on what you will work on. It may also answer some questions you are likely to have on how to use Inventor.
+
+You can now go back to the main [Ventilator wiki](https://github.com/RespiraWorks/Ventilator/wiki) and read the rest of whatever is pertinent to your work.
