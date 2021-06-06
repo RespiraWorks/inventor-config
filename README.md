@@ -1,10 +1,10 @@
 # Inventor configuration
 
-This repository contains Autodesk Inventor configuration and templates for mechanical design aspects of RespiraWorks' projects. This document  also explains how to install and configure your Inventor to best collaborate with our team. If you are part of the mechanical team or will be contributing to the mechanical design in any way, you should follow this guide and use this repository to help you.
+This repository contains Autodesk Inventor configuration and templates for mechanical design aspects of p[RespiraWorks](https://respira.works/)' projects. This document  also explains how to install and configure your Inventor to best collaborate with our team. If you are part of the mechanical team or will be contributing to the mechanical design in any way, you should follow this guide and use this repository to help you.
 
 Assumptions:
-* all of our projects or products requiring mechanical design should use the same configuration
-* however, parts and assemblies can be viewed and used by external persons/organizations without these configurations
+* all of our mechanical designs should use the same Inventor configurations, standards and templates
+* however, product parts and assemblies should be easily viewed and used by external persons/organizations without these configurations
 
 Therefore, this information is stored in this repository, separate from
 [Ventilator](https://github.com/RespiraWorks/Ventilator). 
