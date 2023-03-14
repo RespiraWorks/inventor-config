@@ -1,75 +1,59 @@
 # Inventor configuration
 
-This repository contains Autodesk Inventor configuration and templates for mechanical design aspects of [RespiraWorks](https://respira.works/)' projects. This document  also explains how to install and configure your Inventor to best collaborate with our team. If you are part of the mechanical team or will be contributing to the mechanical design in any way, you should follow this guide and use this repository to help you.
+This repository contains Autodesk Inventor configuration and templates for mechanical design aspects of [RespiraWorks](https://respira.works/)' projects. This document  also explains how to install and configure your Inventor to best collaborate with our team.
 
-Assumptions:
-* all of our mechanical designs should use the same Inventor configurations, standards and templates
-* however, product parts and assemblies should be easily viewed and used by external persons/organizations without these configurations
+Why?:
+* all of our mechanical designs use the same Inventor configurations, standards and templates
+* product parts and assemblies can be viewed and used by external persons/organizations without these configurations
 
 Therefore, this information is stored in this repository, separate from
-[Ventilator](https://github.com/RespiraWorks/Ventilator). 
+[Ventilator](https://github.com/RespiraWorks/Ventilator).
 
-This repository constitutes an Inventor "project". You should use this repository to configure your Inventor to help you collaborate with the team in a more synchronized way.
+This repository constitutes an Inventor "project" - as defined in an `ipj` file. You should use this repository to configure your Inventor to help you collaborate with the team in a synchronized way.
 
-## Install Inventor
+## Getting started
 
-* get credentials to our Google suite (ask team leads)
-* configure your @respira.works email as described [here](https://docs.google.com/document/d/1z49daVwK5BODKR17yKRd85mAhRE2YoR_AhgDTajkC7Q/edit).
-* use this email to register an account with Autodesk
-* ask Curtis to get you an Autodesk license
-* install and update using the Autodesk Desktop App
-* install the latest version of Inventor Professional, keep it updated
+Firstly, we assume that you have installed the most recent version of Inventor Professional. If you need a license, please contact our team on Slack. For joining the team, see the [Ventilator wiki](https://github.com/RespiraWorks/Ventilator/wik).
 
-## Install and configure git
+We also assume that you have installed, configured and at least minimally learned how to use git and git bash. If not, please read the [git setup](https://github.com/RespiraWorks/Ventilator/wiki/git-setup) wiki article.
 
-Before we proceed, we assume that you have installed, configured and at least minimally learned how to use git and git bash. If not, please read the [git setup](https://github.com/RespiraWorks/Ventilator/wiki/git-setup) wiki article.
+### Clone repositories.
 
-## Configure Inventor directories
+Select a folder on your system that will be convenient to find via both File Explorer and the command line terminal. This could even be your home directory. Below, wee will assume it is in your home directory.
 
-First set the Inventor "Project folder". This should be some directory that is easy for you to reach by both -
-your file browser and via git bash.
+Open up a Git Bash terminal. Click on `Start`, type "git bash" and hit `Enter`.
 
-Follow `Tools tab` > `Application Option` > `File tab`.
+Now you can run the following commands:
+```shell
+git clone git@github.com:RespiraWorks/inventor-config.git respira
+cd respira
+git clone git@github.com:RespiraWorks/Ventilator.git ventilator
+```
 
-Find the `Projects folder` line and set some path you will find convenient.
+And explanation of the above:
+* we clone this repository into a directory we call "respira" for convenience of finding and CD-ing into it
+* we go into the repository directory and, within it...
+* we clone the ventilator repository, also renaming it to lower case for easier typing later
 
-## Clone this repository
+This repository is set up to ignore the `ventilator` subdirectory, so there should be no conflict between the repos on whom the files belong to.
 
-You should close this repository into the `Projects folder` you configured above, but you should name it something else.
-This is so you can easily `cd` to it in terminal, and to the constituent "projects" such as the Ventilator that will
-be subdirectories.
+### Initial Inventor configuration
 
-My recommendation is `respira` in which case you should clone it thusly:
+Before you open any files in Inventor, go into `Tools tab` > `Application Options`.
+* in the `File` tab, select `Configure Default Template...` and select "millimeters" and "ISO"
+* (recommended) in the `Colors` tab, select "Dark" for `UI Theme`.
 
-`git clone git@github.com:RespiraWorks/inventor-config.git respira`
+Now we can open up our project. Do the following:
 
-Open inventor and make sure you have the `RespiraWorks` project available to you. You should also be able to access
-the included templates, including drawing templates.
+| 1. On the left pane on the `Home` page | 2. Right click and `Browse...`       |
+|----------------------------------------|--------------------------------------|
+| ![](screenshots/project_settings.png)  | ![](screenshots/projects_browse.png) |
 
-## Customizing
+3. Find the `RespiraWorks.ipj` file wherever you cloned this repository.
+4. Click `Done`.
+5. Make sure you have the "RespiraWorks" project selected on the `Home` page.
 
-`Old Versions To Keep On Save` is set to `0`. We are assuming that you are saving and then committing your
-work to repo to keep the intermediate work available to your colleagues. If you do want to keep additional
-versions available to yourself locally, you can set this to some non-zero value. Our repositories are configured
-to ignore the `OldVersions` folders on your disk, so you do not risk polluting or blowing up our repos.
-
-## Working on Ventilator or something...
-
-So now we want to work on an actual project.
-We have here defined a "Project" in Inventor parlance on the scope of our organization, because we want to
-follow common templates, styles, color schemes, etc.. For us, however, an actual project that follows these
-standards is of a level below that. So, we will want to clone something like the
-[Ventilator](https://github.com/RespiraWorks/Ventilator) repository into this all-encompassing project workspace.
-
-Use `git bash` and `cd` into the project directory where you cloned this repository. If you followed the suggestion
-above, this would be `respira`. Clone the ventilator repo here:
-
-`git clone git@github.com:RespiraWorks/Ventilator.git ventilator`
-
-This repo is set up to ignore `Ventilator` or `ventilator` subdirectories, so there should be no conflict between
-the repos on whom the files belong to.
-
-Things should now be wonderful, and you should be seeing rainbows 'n stuff.
+You can now open ventilator design files and work on them.
 
 ## What's next?
 
